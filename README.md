@@ -1,25 +1,25 @@
 # Cordova-Plugin-Bluetooth-Printer
 A cordova plugin for bluetooth printer for android platform, which support text printing and POS printing.
 
-##Support
+## Support
 - Text
 - POS Commands
 - Image Printing (todo)
 - Barcode Printing (todo)
 
-##Install
+## Install
 Using the Cordova CLI and NPM, run:
 
 ```
-cordova plugin add https://github.com/srehanuddin/Cordova-Plugin-Bluetooth-Printer.git
+cordova plugin add https://github.com/eDialog-team/Cordova-Plugin-Bluetooth-Printer.git
 ```
 
 
 
-##Usage
+## Usage
 Get list of paired bluetooth printers
 
-```
+```js
 BTPrinter.list(function(data){
         console.log("Success");
         console.log(data); //list of printer in data array
@@ -32,7 +32,7 @@ BTPrinter.list(function(data){
 
 Connect printer
 
-```
+```js
 BTPrinter.connect(function(data){
 	console.log("Success");
 	console.log(data)
@@ -45,7 +45,7 @@ BTPrinter.connect(function(data){
 
 Disconnect printer
 
-```
+```js
 BTPrinter.disconnect(function(data){
 	console.log("Success");
 	console.log(data)
@@ -58,7 +58,7 @@ BTPrinter.disconnect(function(data){
 
 Disconnect printer
 
-```
+```js
 BTPrinter.disconnect(function(data){
 	console.log("Success");
 	console.log(data)
@@ -71,7 +71,7 @@ BTPrinter.disconnect(function(data){
 
 Print simple string
 
-```
+```js
 BTPrinter.printText(function(data){
     console.log("Success");
     console.log(data)
@@ -84,7 +84,7 @@ BTPrinter.printText(function(data){
 
 Print image
 
-```
+```js
 BTPrinter.printText(function(data){
     console.log("Success");
     console.log(data)
@@ -107,7 +107,7 @@ BTPrinter.print(function(data){
 
 POS printing
 
-```
+```js
 BTPrinter.printPOSCommand(function(data){
     console.log("Success");
     console.log(data)
